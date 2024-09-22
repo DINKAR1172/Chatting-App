@@ -24,6 +24,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.chattingapp.R
 import com.example.chattingapp.Screens
@@ -44,6 +45,7 @@ fun SignUp(navigation:NavHostController,viewModel:AuthViewModel){
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        androidx.compose.material3.Text(text = "SIGN UP SCREEN", fontSize = 40.sp)
         OutlinedTextField(
             value = email,
             onValueChange = { email = it },

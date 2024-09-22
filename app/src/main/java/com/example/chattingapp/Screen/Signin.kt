@@ -23,6 +23,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 import com.example.chattingapp.Model.Result
 import com.example.chattingapp.Screens
@@ -41,6 +42,7 @@ fun Signin(navigation:NavHostController,ViewModel:AuthViewModel,context: Context
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
+        androidx.compose.material3.Text(text = "SIGN IN SCREEN", fontSize = 40.sp)
         OutlinedTextField(
             value = email,
             onValueChange = { email = it },
